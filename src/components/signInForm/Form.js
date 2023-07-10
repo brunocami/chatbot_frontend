@@ -39,7 +39,7 @@ const Form = ({ submitForm }) => {
         </div>
        
         <button className='form-input-btn' type='submit'>
-          Sign up
+          Sign in
         </button>
         <span className='form-input-login'>
           You're not registered? Sign Up <Link to='/signup'>here</Link>

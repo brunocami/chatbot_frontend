@@ -10,6 +10,11 @@ function Navbar() {
         setUser(user)
     }, [])
 
+    const Logout = () => {
+        sessionStorage.removeItem('user');
+        window.location.reload();
+    }
+
     if (user) {
         return (
             <nav className="navbar navbar-expand-lg bg-light" data-bs-theme="light">
@@ -39,6 +44,7 @@ function Navbar() {
                     </div>
                 </div>
                 <div className='col d-none d-lg-flex justify-content-end'>
+                    <span className="navbar-brand" style={{color: "#25D366"}} onClick={Logout}>Logout</span>
                 </div>
             </nav>
         )

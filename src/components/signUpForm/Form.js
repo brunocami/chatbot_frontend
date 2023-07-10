@@ -1,6 +1,7 @@
 import React from 'react';
 import validate from './ValidateInfo';
 import useForm from './UseForm';
+import { Link } from 'react-router-dom'
 import './Form.css';
 
 const Form = ({ submitForm }) => {
@@ -68,7 +69,7 @@ const Form = ({ submitForm }) => {
           Sign up
         </button>
         <span className='form-input-login'>
-          Already have an account? Login <a href='#'>here</a>
+          Already have an account? Login <Link to='/signin'>here</Link>
         </span>
       </form>
     </div>

@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import React from 'react'
 import { useNavigate } from 'react-router-dom'; // Importa usenavigate para redireccionar
 import Form from './signInForm/Form.js'
@@ -29,7 +30,9 @@ const SignUp = () => {
   return (
     <>
       <div className="form-container">
-        <span className="close-btn">x</span>
+        <span className="close-btn">
+          <Link to='/' className='text-light' style={{textDecoration: "none"}}>x</Link>
+        </span>
         <div className="form-content-left">
           <img src={img2} className="form-img" />
         </div>
